@@ -1,0 +1,20 @@
+#notification form .form-group label{
+    all: unset;
+}
+#notification form input{
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 238px;
+    height: 25px;
+    margin: 9px;
+}
+#notification form textarea{
+    display: inline-block;
+}
+#notification form textarea{
+    display: inline-block;
+}
+#notification .tabs label{
+    padding: 10px 80px;
+}
+
