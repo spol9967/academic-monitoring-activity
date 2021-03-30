@@ -1,0 +1,84 @@
+ <form method="POST" action="add_staff">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label>database-id</label>
+                                                                <input type="text" class="form-control" placeholder="Company" value="IDBCOE11">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>staff-id</label>
+                                                                <input name="id" type="text" class="form-control" value="sta">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>email address</label>
+                                                                <input name="email" type="email" class="form-control" required="required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>First name</label>
+                                                            <input name="fname" type="text" class="form-control" placeholder="first name"
+                                                                required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>middle name</label>
+                                                            <input name="mname" type="text" class="form-control" placeholder="middle name" required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>last name</label>
+                                                            <input name="lname" type="text" class="form-control" placeholder="last name" required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>mother's name</label>
+                                                            <input name="momname" type="text" class="form-control" placeholder="mother's name" required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Address</label>
+                                                                <input name="address" type="text" class="form-control" placeholder="Home Address" required="required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>City</label>
+                                                                <input name="city" type="text" class="form-control" placeholder="City" required="required">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>contact no.</label>
+                                                                <input name="number" type="text" class="form-control" placeholder="number" required="required">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>department</label>
+                                                                <input name="department" type="text" class="form-control" placeholder="computer" required="required">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>password</label>
+                                                                <input name="password" type="text" class="form-control" placeholder="*******" value="staff@123" required="required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <button type="submit" class="btn btn-info btn-fill pull-right">ADD</button>
+                                                    </div>
+                                                </form>
