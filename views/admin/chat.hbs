@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{title}}</title>
+    {{>admin/head}}
+    <link href="/css/chat.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        {{>admin/sidebar}}
+        <div class="main-panel">
+            {{>admin/navbar}}
+            <div class="card chat_space">
+
+                <header>
+                    <h1>Chat App</h1>
+                </header>
+
+                <section>
+                    <div id="change_username">
+                        <input id="username" type="text" />
+                        <button id="send_username" type="button">Change username</button>
+                    </div>
+                </section>
+
+                <section id="chatroom">
+                    <section id="feedback"></section>
+                </section>
+
+                <section id="input_zone">
+                    <input id="message" class="vertical-align" type="text" />
+                    <button id="send_message" class="vertical-align" type="button">Send</button>
+                </section>
+
+            </div>
+
+            {{>admin/footer}}
+            <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+            <script src="/js/chat.js"> </script>
+        </div>
+    </div>
+</body>
+
+</html>

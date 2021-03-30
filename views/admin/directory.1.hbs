@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/ama-logo-tab.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    {{>admin/head}}
+    <link href="/css/animate.min.css" rel="stylesheet" />
+    <link href="/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="/css/pe-icon-7-stroke.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        {{>admin/sidebar}}
+
+
+        <div class="main-panel">
+            {{>admin/navbar}}
+            <div class="card mt-10">
+                <div class="dir">
+                    <section class="get">
+                        <h3>Get Data</h3>
+                        <button id="refresh">LOAD DATA</button>
+                    </section>
+                    <div class="table-responsive">
+                        <table id="example" class="display" style="width:100%">
+                            <thead class="">
+                                <tr>
+                                    <th></th>
+                                    <th>DB ID</th>
+                                    <th>title</th>
+                                    <th>content</th>
+                                    <th>author</th>
+                                    <th>#</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each data}}
+                                <tr>
+                                    <td></td>
+                                    <td>{{this._id}}</td>
+                                    <td>{{this.title}}</td>
+                                    <td>{{this.content}}</td>
+                                    <td>{{this.author}}</td>
+                                    <td>
+                                        <form action="/delete" method="POST">
+                                            <input type="text" value="{{this._id}}" name="id" style="display:none">
+                                            <button type="submit"><i class="fas fa-trash-alt"></i></button>
+
+                                        </form>
+
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    {{>admin/footer}}
+    <script>
+        $("#refresh").click(function () {
+            $.get('/get-data')
+                .done(function (response) {
+                    console.log(response);
+                    $('#example').DataTable(response);
+                });
+        });
+    </script>
+
+</body>
+
+</html>
