@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Notification",
+        "header": "",
+        "section": "",
+        "description": "",
+        "images": ""
+    },
+    {
+        "name": "Student",
+        "id": "",
+        "email": "",
+        "password": "",
+        "fname": "",
+        "mname": "",
+        "lname": "",
+        "momname": "",
+        "address": "",
+        "city": "",
+        "number": "",
+        "department": "",
+        "year": "",
+        "profile": ""
+    },
+    {
+        "name": "Staff",
+        "id": "",
+        "email": "",
+        "password": "",
+        "fname": "",
+        "mname": "",
+        "lname": "",
+        "address": "",
+        "city": "",
+        "number": "",
+        "department": "",
+        "post": "",
+        "profile": ""
+    },
+    {
+        "name": "Timetable"
+    },
+    {
+        "name": "Complaint",
+        "Subject": "",
+        "Details": ""
+    },
+    {
+        "name": "Leave",
+        "id": "",
+        "fname": "",
+        "authority": "",
+        "Subject": "",
+        "Details": "",
+        "start_date": "",
+        "end_date": ""
+    },
+    {
+        "name": "Report",
+        "month": "",
+        "id": "",
+        "ut1": "",
+        "ut2": "",
+        "total_days": "",
+        "present": "",
+        "leave_taken": ""
+    }
+]
